@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{interval}
+\usepackage[backend=biber, maxbibnames=5]{biblatex}
+\usepackage{float}
+\usepackage{mathtools}
+
+\addbibresource{citiranja.bib}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newcommand{\autor}{ Mihailo Milenković }
+\newcommand{\naslov}{Aproximation algorithms}
+\newcommand{\datum}{Novi Sad, 2021}
+\newcommand{\mentor}{dr. Miloš Stojaković}
+\begin{document}
+	\begin{center}
+		
+		\includegraphics[width=2cm]{grbPMF}\hfill
+		\parbox[b]{45ex}{\centering 
+		University of Novi Sad\\
+			Faculty of Sciences\\
+			Department of Mathemathics and Informatics}\hfill 
+		\includegraphics[width=2cm]{grbUNS}
+		
+		\vspace{22ex}
+				
+		{\Huge {\bf \setlength{\baselineskip}{1.5\baselineskip}\naslov}}
+		
+ 		\vspace{4ex}
+ 		Seminar paper
+ 		\vfill	
+ 		{\Large Author:}
+		{\Large {\bf \autor}}
+		\vspace{10ex}
+		
+		{\Large Mentor:}
+		{\Large  \textbf{\mentor}}
+		\vspace{5ex}
+	
+		
+		\datum
+		
+	\end{center}
+	\thispagestyle{empty}
+	\newpage	
+	\vfill
+
+	\thispagestyle{empty}
+	\tableofcontents
+	\newpage
+	
+	\section{Introduction}
+    % \cite{clrs2009intro} <- biblija
+    
+   \section{Travelling Salesman problem}
+   
+   \subsection{Problem definition}
+   
+   \subsection{Exact solution using dynamic programming}
+   
+   \subsection{Special case problem with triangle inequality}
+   
+   \subsubsection{2-approximation algorithm}
+   
+   \subsubsection{$\frac{3}{2}$-approximation algorithm}
+   
+   \section{Knapsack problem}
+   
+   \subsection{Polynomial time approximation schema}
+   
+   \subsection{Fully polynomial time approximation schema}
+   
+   \section{Vertex cover problem}
+   
+   \subsection{Approximation algorithm for unweighted graphs}
+   
+   \subsection{Randomized approximation algorithm for weighted graphs}
+   
+   
+	\section*{References}
+	\printbibliography[heading=none]
+\end{document}
